@@ -22,7 +22,7 @@ export default function TodoList() {
   }, []);
 
   return (
-    <div className="min-w-1/2">
+    <div className="w-1/2">
       {todos?.length !== 0
         ? todos.map((todo) => <TodoItem key={todo.id} todo={todo} />)
         : 'NO TODOS TO SHOW'}
